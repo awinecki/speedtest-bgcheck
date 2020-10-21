@@ -14,7 +14,7 @@ make install-speedtest
 make test
 ```
 
-You can also specify the interval in seconds, like `make test sleep=15` (checks every 15 seconds).
+You can also specify the interval in seconds, like `make test sleep=15` (checks every 15 seconds). I recommend running this in a background process, either by using `&` in bash, or better, `tmux` or `screen`.
 
 Then, after a while come back and check `results.txt`. To filter just Download speeds, run `make print-downloads`.
 
