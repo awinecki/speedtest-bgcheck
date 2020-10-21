@@ -9,6 +9,9 @@ install-speedtest: # Install speedtest.net official CLI (macOS) -> https://www.s
 	brew update
 	brew install speedtest --force
 
+logs: # Tails speedtest logs
+	tail -f results.txt
+
 cleanup: # Rm results & create new file
 	rm results.txt
 	touch results.txt
